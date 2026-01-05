@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+
+    <div class="main-container">
+
+        <div class="tittle">
+            <h2>Password Generator</h2>
+        </div>
+        <div class="place-password">
+            <p id="password"></p>
+            <i class="bi bi-copy"></i>
+        </div>
+
+        <div class="rest-info">
+            <div class="character-length">
+                <p>Character Length</p>
+                <span id="length">0</span>
+            </div>
+
+            <div class="slider">
+                <div class="slider-track"></div>
+                <div class="slider-fill"></div>
+                <div class="slider-thumb"></div>
+            </div>
+            
+            <div class="checkboxs">
+                <div>
+                    <input type="checkbox" id="uppercase">
+                    <p>Inculdes Uppercases Letters</p>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase">
+                    <p>Include Lowecase Letters</p>
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers">
+                    <p>Inculdes Numbers</p>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbols">
+                    <p>Includes Symbols</p>
+                </div>
+                <hr class="separation">
+            </div>
+
+            <div class="strench">
+                <p>STRENCH</p>
+                <div class="dificult">
+                    <p id="nivel">NIVEL</p>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="button-generator">
+                <button id="generator">GENERATE <i class="bi bi-arrow-right"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
